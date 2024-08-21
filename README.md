@@ -16,12 +16,12 @@ To get started with the code in this repository:
 
 Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ProgrammingLanguages
+   git clone https://github.com/yourusername/Coding
    ```
 
 Navigate to the desired language folder:
    ```bash
-   cd ProgrammingLanguages/language-folder
+   cd Coding/language-folder
    ```
 
 ## Contributing
