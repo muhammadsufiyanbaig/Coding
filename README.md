@@ -1,6 +1,6 @@
-# Programming Languages
+# Coding
 
-Welcome to Repository! This repository contains basics topics javascript, typescript, python, c, c++ that I've learned.
+Welcome to my coding Repository! This repository contains basics topics javascript, typescript, python, c, c++ that I've learned.
 
 ## Languages and Folders
 
