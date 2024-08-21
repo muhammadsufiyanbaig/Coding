@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Email:<br>
+<input type="text" size="100" onFocus="this.style.backgroundColor='blue';"> -->
+<script>
+function makeFieldBlue(){
+    this.style.backgroundColor="Blue"
+}
+function makeFieldWhite(){
+    this.style.backgroundColor="White"
+}
+</script>
+
+Email:<br>
+<input type="text" size="30" onFocus="makeFieldBlue();" onBlur="makeFieldWhite();">
+
+</body>
+</html>

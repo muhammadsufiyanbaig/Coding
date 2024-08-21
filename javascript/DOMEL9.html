@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        #div1{
+            background-color: coral;
+            border: 1px solid black;
+            padding: 50px;
+            color: wheat;
+            font-size: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>JS removeEventListener</h1>
+    <div id="div1">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, ratione consequuntur. Iste atque repellat blanditiis ut nulla laudantium reiciendis doloribus labore quae praesentium, molestias aut in et neque aliquam esse, provident possimus accusantium mollitia corrupti repudiandae reprehenderit dolores unde delectus! Modi, explicabo quidem. Sunt animi, at totam ut vitae accusamus.</p>
+        <p>Click the button to remove the div's event handler.</p>
+        <button onclick="removeHandler()" id="btn1">Remove</button>
+    </div>
+    <p id="id1"></p>
+    <script>
+        document.getElementById("div1").addEventListener("mousemove", Function1);
+        function Function1() {
+            document.getElementById("id1").innerHTML = Math.random();
+        }
+        function removeHandler() {
+            document.getElementById("div1").removeEventListener("mousemove", Function1);
+        }
+    </script>
+</body>
+</html>

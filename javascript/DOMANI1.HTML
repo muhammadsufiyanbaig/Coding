@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Container {
+            width: 800px; /* Added 'px' to specify width and height */
+            height: 800px; /* Added 'px' to specify width and height */
+            position: relative;
+            background-color: rgb(45, 68, 68);
+        }
+        #Animate {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation!</h1>
+    <div id="Container">
+        <div id="Animate"></div>
+    </div>
+    <p><button onclick="myMove()">Animation</button></p>
+
+    <script>
+        function myMove(){
+            let id = null;
+            const elem = document.getElementById("Animate");
+            let pos = 0;
+            clearInterval(id);
+            id = setInterval(frames, 10);
+            function frames(){
+                if (pos == 700) {
+                    clearInterval(id);
+                } else {
+                    pos++;
+                    elem.style.top = pos + "px";
+                    elem.style.left = pos + "px";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

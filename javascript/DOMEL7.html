@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro maxime et libero illum corrupti quo!</p>
+    <p>Click the button to perform a calculation.</p>
+    <button id="id1">Try it</button>
+    <p id="id2"></p>
+    <script>
+        let p1 = 50;
+        let p2 = 100;
+        document.getElementById("id1").addEventListener("click", function(){
+            MyFunction(p1, p2);
+        });
+      function MyFunction(a, b) {
+        document.getElementById("id2").innerHTML = a * b;
+      }  
+    </script>
+</body>
+</html>

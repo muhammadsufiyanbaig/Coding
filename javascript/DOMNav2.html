@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Navigator</title>
+</head>
+<body>
+<h1 id="id1">Lorem ipsum dolor sit amet.</h1>
+<p id="id2"></p>
+<script>
+    document.getElementById("id2").innerHTML = 
+    document.getElementById("id1").firstChild.nodeValue;
+</script>
+</body>
+</html>

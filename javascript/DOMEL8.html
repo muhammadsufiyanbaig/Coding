@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>DOM addEventListener</title>
+</head>
+<body>
+    <style>
+        #div1, #div2{
+            background-color: palegreen;
+            padding: 50px;
+        }
+        #id1, #id2{
+            background-color: whitesmoke;
+            font-size: 20px;
+            border: 1px solid;
+            padding: 20px;
+        }
+    </style>
+    <h2>DOM addEventListener</h2>
+    <div id="div1">
+        <h2>Bubbling:</h2>
+        <p id="id1">Click Here</p>
+    </div><br>
+    <div id="div2">
+        <h2>Capturing:</h2>
+        <p id="id2">Click Here</p>
+    </div>
+    <script>
+        document.getElementById("id1").addEventListener("click", function (){
+            alert("You are clicked whitesmoke element!");
+        }, false);
+        document.getElementById("div1").addEventListener("click", function (){
+            alert("You are clicked Palegreen element!");
+        }, false);
+        document.getElementById("id2").addEventListener("click", function (){
+            alert("You are clicked whitesmoke element!");
+        }, false);
+        document.getElementById("div2").addEventListener("click", function (){
+            alert("You are clicked Palegreen element!");
+        }, false);
+        
+    </script>
+</body>
+</html>

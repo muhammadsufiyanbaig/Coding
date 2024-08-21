@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, aliquid?</p>
+    <button id="id1">Click here</button>
+    <p id="id2"></p>
+    <script>
+        var x = document.getElementById("id1");
+        x.addEventListener("mouseover",FirstFunction);
+        x.addEventListener("click",SecondFunction);
+        x.addEventListener("mouseout",ThirdFunction);
+        function FirstFunction() {
+          document.getElementById("id2").innerHTML += "Mouse Over!<br>"; 
+        }
+        function SecondFunction() {
+            document.getElementById("id2").innerHTML += "Clicked!<br>";
+        }
+        function ThirdFunction() {
+            document.getElementById("id2").innerHTML += "Mouse Out!<br>";  
+        }
+    </script>
+</body>
+</html>

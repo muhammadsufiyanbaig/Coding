@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = document.getElementById("table1");
+        console.log(a);
+        var ball = a.getElementsByTagName("p");
+        for (var i = 0; i<ball.length; i++){
+            ball[i].style.backgroundColor = "green";
+
+        }
+    </script>
+       <p id="table1" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, architecto.</p>
+    
+</body>
+</html>

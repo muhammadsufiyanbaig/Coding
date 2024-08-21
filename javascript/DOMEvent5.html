@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter your Name: <input type="text" id="fname" onchange="uppercase()">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, reprehenderit.</p>
+    <script>
+        function uppercase() {
+            const x = document.getElementById("fname");
+            x.value = x.value.toUppercase();
+        }
+    </script>
+</body>
+</html>
